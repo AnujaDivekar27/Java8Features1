@@ -10,27 +10,29 @@ import java.util.function.Supplier;
 public class SupplierInterfaceEx {
 
 	public static void main(String[] args) {
+
+		Supplier<String> str = () -> {
+
+			String s = "Hello";
+			return s;
+
+		};
+
+		System.out.println(str.get());
+		System.out.println("------------------------------------------");
+
+		Supplier<Student> stud = () -> {
+
+			Student s = new Student();
+			s.setSid(1);
+			s.setSname("Devansh");
+			return s;
+
+		};
+
+		System.out.println(stud.get());
+		System.out.println("------------------------------------------");
 		
-	  Supplier<String> str=()->{
-		  
-	    String s="Hello";
-	    return s;
-	   
-	  };
-	
-	  System.out.println(str.get());
-	  System.out.println("------------------------------------------");
-	  
-	  Supplier<Student> stud=()->{
-		  
-		 Student s=new Student();
-		 s.setSid(1);s.setSname("Devansh");
-		 return s;
-		   
-	  };
-	
-	  System.out.println(stud.get());
 	}
-	
-	
+
 }
