@@ -33,6 +33,9 @@ public class SupplierInterfaceEx {
 		System.out.println(stud.get());
 		System.out.println("------------------------------------------");
 		
+		Supplier<String> str1=()->"supplier interface";
+		System.out.println(str1.get());
+		
 	}
 
 }

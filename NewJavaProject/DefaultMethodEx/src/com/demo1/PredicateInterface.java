@@ -1,5 +1,8 @@
 package com.demo1;
 
+/*traditional way of using Predicate Interface
+*********************************************************************/
+
 import java.util.function.Predicate;
 
 public class PredicateInterface implements Predicate<Integer> {
@@ -25,7 +28,6 @@ public class PredicateInterface implements Predicate<Integer> {
 		System.out.println("Number"+" " +" "+"is even???"+" "+p.test(25));
 		
 	}
-
 }
 
 
