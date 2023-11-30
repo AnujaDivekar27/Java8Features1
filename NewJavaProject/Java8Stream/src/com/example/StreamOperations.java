@@ -6,10 +6,17 @@ public class StreamOperations {
 
   public static void main(String[] args) {
 	
+<<<<<<< HEAD
 	int a[]= {5,7,4,9,1,7};
 	System.out.println("max():find maximum element from an array");
 	//max()->terminal operation returns operational
 	int max=Arrays.stream(a).max().getAsInt(); 
+=======
+    int a[]= {5,7,4,9,1};
+    System.out.println("find maximum element from an array");
+    //max()->terminal operation returns operational
+    int max=Arrays.stream(a).max().getAsInt(); 
+>>>>>>> 876d2a268ad0e8667afc3e373cff04c437f350ae
     System.out.println(max);
     
     System.out.println("=============================================");
