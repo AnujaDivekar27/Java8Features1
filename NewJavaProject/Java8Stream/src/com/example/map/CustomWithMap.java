@@ -24,5 +24,6 @@ public class CustomWithMap {
   System.out.println("==========================================================================================================");
   List<String> contactno1=clist.stream().flatMap(n->n.getPhoneno().stream()).collect(Collectors.toList());
   System.out.println(contactno1);
+  //[9689427279, 9156516403, 7709310164, 02425224276, 9607736344, 9852514500]
   }
 }
