@@ -10,6 +10,14 @@ public class ListWithStream {
 	
    List<Integer> l1=Arrays.asList(23,12,44,65,78);
    List<Integer>l2=l1.stream().filter(n->n%2==0).collect(Collectors.toList());
-   System.out.println(l2);
+   System.out.println(l2);   //[12, 44, 78]
+   
+   System.out.println("====================================================");
+   l2.add(88);
+   System.out.println(l2);   //[12, 44, 78,88]
+   
+   System.out.println("sort():sort stream in ascending order===============");
+   
+   
 }
 }
